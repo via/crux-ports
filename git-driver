@@ -23,4 +23,9 @@ if [ -z "$NAME" ]; then
   exit 2
 fi
 
-git clone "$URL" "$ROOT_DIR/$NAME"
+if [ -d "$ROOT_DIR/$NAME" ]; then
+  cd "$ROOT_DIR/$NAME"
+  git pull
+else
+  git clone "$URL" "$ROOT_DIR/$NAME"
+fi

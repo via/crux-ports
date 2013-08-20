@@ -1,0 +1,4 @@
+NAME=via-ports
+URL=https://github.com/via/crux-ports.git
+ROOT_DIR=/usr/ports
+

@@ -1,0 +1,4 @@
+Copy git-driver to /etc/ports/drivers/git.
+Copy via-ports.git to /etc/ports .
+
+Run ports -u.

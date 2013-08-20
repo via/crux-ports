@@ -1,9 +1,0 @@
-drwxr-xr-x	via/users	usr/
-drwxr-xr-x	via/users	usr/bin/
--rwxr-xr-x	via/users	usr/bin/dmenu
--rwxr-xr-x	via/users	usr/bin/dmenu_run
--rwxr-xr-x	via/users	usr/bin/stest
-drwxr-xr-x	via/users	usr/man/
-drwxr-xr-x	via/users	usr/man/man1/
--rw-r--r--	via/users	usr/man/man1/dmenu.1.gz
--rw-r--r--	via/users	usr/man/man1/stest.1.gz

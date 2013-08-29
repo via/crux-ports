@@ -1,0 +1,11 @@
+name=s3fs
+version=1.73
+release=1
+source=(http://s3fs.googlecode.com/files/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr --mandir=/usr/man
+  make
+  make DESTDIR=$PKG install
+}

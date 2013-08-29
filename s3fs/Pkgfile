@@ -1,3 +1,4 @@
+#Depends on: fuse
 name=s3fs
 version=1.73
 release=1

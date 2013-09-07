@@ -1,18 +1,13 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/libftdi1-config
+-rwxr-xr-x	root/root	usr/bin/libftdi-config
 drwxr-xr-x	root/root	usr/include/
-drwxr-xr-x	root/root	usr/include/libftdi1/
--rw-r--r--	root/root	usr/include/libftdi1/ftdi.h
+-rw-r--r--	root/root	usr/include/ftdi.h
 drwxr-xr-x	root/root	usr/lib64/
-drwxr-xr-x	root/root	usr/lib64/cmake/
-drwxr-xr-x	root/root	usr/lib64/cmake/libftdi1/
--rw-r--r--	root/root	usr/lib64/cmake/libftdi1/LibFTDI1Config.cmake
--rw-r--r--	root/root	usr/lib64/cmake/libftdi1/UseLibFTDI1.cmake
--rw-r--r--	root/root	usr/lib64/libftdi1.a
-lrwxrwxrwx	root/root	usr/lib64/libftdi1.so -> libftdi1.so.2
-lrwxrwxrwx	root/root	usr/lib64/libftdi1.so.2 -> libftdi1.so.2.0.0
--rwxr-xr-x	root/root	usr/lib64/libftdi1.so.2.0.0
+-rw-r--r--	root/root	usr/lib64/libftdi.a
+lrwxrwxrwx	root/root	usr/lib64/libftdi.so -> libftdi.so.1
+lrwxrwxrwx	root/root	usr/lib64/libftdi.so.1 -> libftdi.so.1.20.0
+-rwxr-xr-x	root/root	usr/lib64/libftdi.so.1.20.0
 drwxr-xr-x	root/root	usr/lib64/pkgconfig/
--rw-r--r--	root/root	usr/lib64/pkgconfig/libftdi1.pc
--rw-r--r--	root/root	usr/lib64/pkgconfig/libftdipp1.pc
+-rw-r--r--	root/root	usr/lib64/pkgconfig/libftdi.pc
+-rw-r--r--	root/root	usr/lib64/pkgconfig/libftdipp.pc

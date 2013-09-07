@@ -1,10 +1,10 @@
 name=libftdi
-version=1.0
+version=0.20
 release=1
-source=(http://www.intra2net.com/en/developer/$name/download/${name}1-$version.tar.bz2)
+source=(http://www.intra2net.com/en/developer/$name/download/${name}-$version.tar.gz)
 
 build() {
-  cd ${name}1-$version
+  cd ${name}-$version
   cmake -DCMAKE_INSTALL_PREFIX="/usr" 
   make
   make DESTDIR=$PKG install

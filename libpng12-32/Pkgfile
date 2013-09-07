@@ -1,0 +1,23 @@
+# Description: Library of PNG support functions.
+# URL:         http://www.libpng.org
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on:  zlib-32 libpng
+
+name=libpng12-32
+version=1.2.50
+release=1
+source=(http://download.sourceforge.net/libpng/libpng-$version.tar.xz)
+
+build() {
+    cd libpng-$version
+    ./configure --prefix=/usr --mandir=/usr/man --libdir=/usr/lib32
+
+    make
+    make DESTDIR=$PKG install
+    rm -r $PKG/usr/{bin,include,man}
+# We want to leave the 1.5 symlinks in place
+    rm $PKG/usr/lib32/libpng.la
+    rm $PKG/usr/lib32/libpng.so
+    rm $PKG/usr/lib32/libpng.a
+    rm $PKG/usr/lib32/pkgconfig/libpng.pc
+}

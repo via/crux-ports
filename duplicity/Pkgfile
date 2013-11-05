@@ -7,7 +7,7 @@ source=(http://code.launchpad.net/duplicity/0.6-series/0.6.22/+download/duplicit
 build() {
   cd $name-$version
   python setup.py build
-  python setup.py install --prefix=$PKG
-  rm -r $PKG/share/doc
-  rm -r $PKG/share/locale
+  python setup.py install --prefix=/usr --root=$PKG
+  rm -r $PKG/usr/share/doc
+  rm -r $PKG/usr/share/locale
 }
